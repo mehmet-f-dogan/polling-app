@@ -25,7 +25,7 @@ services:
       context: polling-app-client # Use an image built from the specified dockerfile in the `polling-app-client` directory.
       dockerfile: Dockerfile
       args:
-        REACT_APP_API_BASE_URL: http://portfolio-polling-app.mehmetfd.dev/api
+        REACT_APP_API_BASE_URL: https://portfolio-polling-app.mehmetfd.dev/api
     ports:
       - "9090:80" # Forward the exposed port 80 on the container to port 80 on the host machine
     restart: always
